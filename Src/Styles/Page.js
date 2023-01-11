@@ -3,5 +3,9 @@ import { StyleSheet } from "react-native"
 export const Styles = StyleSheet.create({
     Page: {
         flex: 1
+    },
+
+    List : {
+        flex : 1
     }
 })
