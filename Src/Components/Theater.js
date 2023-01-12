@@ -6,8 +6,13 @@ import { Styles } from '../Styles/TheaterStyle';
 function Theater(props) {
   return(
     <View style={Styles.Card}>
-        <Image source={{uri : props.image }} style={{width : 250, height : 250}} />
-        <Text>{props.title}</Text>
+        <Image 
+          source={{uri : props.image }} 
+          style={Styles.Image} 
+          resizeMode='contain'
+        />
+
+        <Text style={Styles.TextCard}>{props.title}</Text>
     </View>
   );
 }
